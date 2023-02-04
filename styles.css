@@ -147,3 +147,44 @@ left: 10px;
     padding: 6px;
   }
   /*---Finaliza Hero de Imagenes---*/
+/*---Experiencia---*/
+
+.exp{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin: 0px 15px;
+}
+
+.exp img{
+    width: 100%;
+    height: 180px;;
+}
+ .exp h3{
+     font-size: 25px;
+    margin: 10px;
+    color: rgb(31, 44, 36);
+    
+ }
+
+ #cuadro{
+    border-right: 4px solid rgb(53, 4, 131);
+    border-left: 4px solid rgb(53, 4, 131);
+    background-color:rgb(84, 65, 114); opacity: 0.8;
+    border-top: 4px solid rgb(136, 123, 156);
+    border-bottom: 4px solid rgbrgb(136, 123, 156);
+ }
+ .exp a{
+     padding: 15px 5px;
+     text-transform: uppercase;
+     color: #f6f6f6;
+     display: inline-block;
+     font-weight: bold;
+ }
+
+    
+
+ .exp a:hover{
+     text-decoration: underline;
+ }
+ /*------Fin Experiencia--------*/
