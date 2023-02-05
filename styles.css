@@ -306,6 +306,32 @@ input[type="submit"]{
 #success{
     color: #7aaa5d;
 }
+/*-----------Final ContactMe------------------------*/
 
+/*---------------Skills -------------------------------*/
 
-
+table.customTable {
+    width: 1000px;
+    background-color: rgba(85, 221, 178, 0.521);
+    border-collapse: collapse;
+    border-width: 6px;
+    border-color: rgb(88, 213, 71);
+    border-style: double;
+    color: #000000;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  table.customTable td, table.customTable th {
+    border-width: 6px;
+    border-color: #54A7B8;
+    border-style: double;
+    padding: 5px;
+  }
+  
+  table.customTable thead {
+    background-color: #a857d190;
+  }
+  td img{
+    display: block;
+  }

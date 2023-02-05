@@ -98,3 +98,54 @@ function validacionEmail(email){
     return validacion.test(email);
 }
 /*---------------Fin logica validación de contact me---------------*/
+
+/*---------------------Logica de sacar la data del JSON--------------- */
+var skills = [
+    {
+        "Descripcion" : "Programación SQL",
+        "nivelDom" : "50%" ,
+        "imagenAlusiva" : "./img/sqlImage.jpg"
+    },
+    {
+        "Descripcion" : "Programación C#",
+        "nivelDom" : "45%" ,
+        "imagenAlusiva" : "./img/CImage.jpg"
+    },
+    {
+        "Descripcion" : "Crossfit Training",
+        "nivelDom" : "90%%" ,
+        "imagenAlusiva" : "./img/crossfit.jpg"
+    },
+    {
+        "Descripcion" : "Trabajo en equipo",
+        "nivelDom" : "80%" ,
+        "imagenAlusiva" : "./img/teamwork.jpg"
+    },
+    {
+        "Descripcion" : "Trabajar bajo modalidad Scrum y Kanban",
+        "nivelDom" : "50%" ,
+        "imagenAlusiva" : "./img/meating.jpg"
+    },
+    {
+        "Descripcion" : "Estrés y ansiedad",
+        "nivelDom" : "110%" ,
+        "imagenAlusiva" : "./img/estres.jpg"
+    }
+]
+ 
+construirTabla(skills)/*aqui se llena la tabla*/ 
+
+function construirTabla(data){
+    var tabla = document.getElementById("tablaSkill")
+        for (let i = 0; i < data.length; i++){
+            var row = `
+                <tr>
+                    <td>${data[i].Descripcion}</td>
+                    <td>${data[i].nivelDom}</td>
+                    <td> <img src="${data[i].imagenAlusiva}"> </td>
+                </tr>
+            `
+            tabla.innerHTML += row
+        } 
+    
+}
