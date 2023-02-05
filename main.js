@@ -47,3 +47,54 @@ setInterval(function() {
 /* ScrollReveal().reveal('.exp'); */
 
 /*----------------Finaliza logica de Hero Slider-------------------------------------*/
+
+
+/*------------------Logica validación de contact me---------------*/
+const nameInput= document.querySelector("#name");
+const email= document.querySelector("#email");
+const message= document.querySelector("#message");
+const success= document.querySelector("#success");
+const errorNodes= document.querySelectorAll(".error");
+
+function validateForm(){
+    clearMessages();
+    let errorFlag = false;
+    if(nameInput.value.length < 1){
+        errorNodes[0].innerText = "Debe ingresar su nombre";
+        nameInput.classList.add("error-border");
+        errorFlag= true;
+        alert("Debe ingresar su nombre" )
+    }
+    if(!validacionEmail(email.value)){
+        errorNodes[1].innerText= "Email inválido";
+        email.classList.add("error-border");
+        errorFlag= true;
+        alert("Email inválido" )
+    }
+    
+    if(message.value.length < 1){
+        errorNodes[2].innerText = "Debe ingresar un mensaje";
+        message.classList.add("error-border");
+        errorFlag= true;
+        alert("Debe ingresar un mensaje" )
+    }
+    if(!errorFlag){
+        alert("Su mensaje a sigo enviado" )
+        alert("Nombre: " + nameInput.value + "\n" + "correo: " + email.value + "\n" + "Mensaje: " + message.value + "\n");
+    }
+}
+
+function clearMessages(){
+    for(let i =0 ; i < errorNodes.length; i++){
+       errorNodes[i].innerText="";
+    }
+    nameInput.classList.remove("error-border");
+    email.classList.remove("error-border");
+}
+
+/*------Funcion que valida el email----------------*/
+function validacionEmail(email){
+    let validacion = /\S+@\S+\.\S+/;
+    return validacion.test(email);
+}
+/*---------------Fin logica validación de contact me---------------*/

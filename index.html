@@ -145,6 +145,30 @@
              </ul>
          </div>
      </div>
+
+
+<!----------------------Contact Me---------------------->
+    <div id="contactMe">
+        <form onsubmit="event.preventDefault(); validateForm()">
+            <h1 id="titulo_c">Contáctame</h1>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" placeholder="Tu nombre">
+            <small class="error"></small> 
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Tu email">
+            <small class="error"></small> 
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" placeholder="Ingresa tu mensaje" rows="6"></textarea>
+            <small class="error"></small> 
+            <div class="center">
+                <input type="submit" value ="Enviar mensaje">
+                <p id="success"></p>
+            </div>
+        </form>
+    </div>
+    
     </body>
     <!--Link a javascript-->
     <script src="./main.js"></script> 
