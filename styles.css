@@ -188,3 +188,47 @@ left: 10px;
      text-decoration: underline;
  }
  /*------Fin Experiencia--------*/
+ /*------About Me---------------*/
+
+ .about_m{
+    width: 100%;
+    background: url('/img/fondo.jpg') no-repeat center center/cover;
+    margin: 10px 20px;
+    
+ }
+ .about_m h2{
+     color:rgb(53, 4, 131);
+ }
+ .contenido{
+     
+     margin: 2px 4px;
+     font-size: 24px;
+     display: flex;
+     justify-content: flex-end;
+     
+ }
+ .contenido li{
+     color:#000000;
+ }
+ .about_m h4{
+     margin: 20px 10px;
+     color:rgb(31, 44, 36);
+    
+     
+ }
+
+ .about_m h4 ul{
+    font-size: 10px;
+ }
+ 
+ #foto_p{
+width: 25%;
+height: 25%;
+display: flex;
+align-items: center;
+align-items: flex-start;
+border-radius: 35%;
+box-shadow: tan;
+
+ }
+ /*------Final About Me---------------*/
