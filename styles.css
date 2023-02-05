@@ -211,7 +211,7 @@ left: 10px;
      color:#000000;
  }
  .about_m h4{
-     margin: 20px 10px;
+     margin: 20px 20px;
      color:rgb(31, 44, 36);
     
      
@@ -222,8 +222,8 @@ left: 10px;
  }
  
  #foto_p{
-width: 25%;
-height: 25%;
+width: 15%;
+height: 15%;
 display: flex;
 align-items: center;
 align-items: flex-start;
