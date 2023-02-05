@@ -192,7 +192,7 @@ left: 10px;
 
  .about_m{
     width: 100%;
-    background: url('/img/fondo.jpg') no-repeat center center/cover;
+    background: url('./img/fondo.jpg') no-repeat center center/cover;
     margin: 10px 20px;
     
  }
